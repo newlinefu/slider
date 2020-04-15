@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.slider{
+	width: 240px;
+	height: 400px;
+	border: 2px solid black;
+	margin: 50px 50px;
+	overflow: hidden;
+	background-color: black;
+}
+.slider_line{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: relative;
+	left: 0;
+}
+.slider_item img{
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+.slider_item img[data-scr]{
+	opacity: 0;
+}
